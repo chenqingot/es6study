@@ -1,0 +1,7 @@
+静态方法
+Date.UTC()
+Date.now()
+Date.parse()
+
+实例方法
+Date.prototype.getDate()
