@@ -9,3 +9,4 @@ Array.length ES1
 
 实例方法
 map
+concat ES3
