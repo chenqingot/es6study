@@ -1,1 +1,11 @@
+静态方法
+Array.from() ES6
+Array.isArray() ES5
+Array.of() ES6
+
+实例属性
+Array.length ES1
+
+
+实例方法
 map
