@@ -1,0 +1,1 @@
+//ES5 内建的forEach方法 缺陷：无法使用break 中断 ，也不能使用return 语句返回到外层函数

@@ -10,3 +10,8 @@ Array.length ES1
 实例方法
 map
 concat ES3
+copyWithin ES6
+entries ES6   -----> return Array 迭代器对象，这里引了一个ES6的新概念 Array Iterator  next() 是iterator的方法，{ value: [ 0, 'a' ], done: false }  done 表示迭达器是否结束。
+
+
+ES6 = ES2015
