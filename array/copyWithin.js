@@ -1,5 +1,7 @@
 //1、数组的浅拷贝
 //2、不改变数组的长度
+//arr.copyWithin(target[, start[, end]])
+
 const array1 = [1, 2, 3, 4, 5]
 const foo = array1.copyWithin(1, 4, 5)
 console.log(foo);
