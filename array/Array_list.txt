@@ -31,12 +31,25 @@ Array.prototype.constructor
 a. includes ES2016 判断当前数组是否包含某指定的值
 b. toSource  不是标准方法
 
+迭代方法
+1. forEach
+2. entries ES6 返回一个键值对迭代器对象 Array Iterator  next() 是iterator的方法，{ value: [ 0, 'a' ], done: false }  done 表示迭达器是否结束。
+3. every ES5 全部满足回调返回true
+4. some 有一个慢速测试函数返回true
+5. filter 将所有在过滤函数中返回true的数组远素放进一个新数组中并返回
+6. map 返回一个由回调函数的返回值组成的新数组
+7. reduce
+8. reduceRight
+9. Array.prototype[@@iterator]() //arr[Symbol.iterator]() 返回 iterator 对象
 
-map
+a. find 找到第一个满足测试函数的元素，返回这个元素
+b. findIndex 找到第一个元素返回它的索引
+c. values 返回iterator
 
 
-entries ES6   -----> return Array 迭代器对象，这里引了一个ES6的新概念 Array Iterator  next() 是iterator的方法，{ value: [ 0, 'a' ], done: false }  done 表示迭达器是否结束。
-every ES5
+
+entries    
+
 
 
 
