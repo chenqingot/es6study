@@ -4,16 +4,40 @@ Array.isArray() ES5
 Array.of() ES6
 
 实例属性
-Array.length ES1
+Array.prototype.length ES1
+Array.prototype.constructor
 
 
-实例方法
+实例方法 分类（修改器方法，访问方法，迭代方法）
+修改器方法 （改变原数组）
+1. copyWithin ES6
+2. fill ES6
+3. pop 删除最后一个 返回删除的这个元素
+4. push 一次可以push多个
+5. reverse 颠倒数组中的排序
+6. shift 删除第一个 返回删除的这个元素
+7. sort 
+8. splice 添加或删除，或修改（即先删除再添加）数组中的任意个元素
+9. unshift 重点1.可以添加多个 重点2.返回这个数组的新长度
+
+访问方法 （不改变原数组）
+1. concat ES3
+2. join
+3. slice 抽取当前数组中的一段元素组合成一个新数组
+4. toString
+5. toLocalString 用处不大
+6. indexOf 重点1.找到第一个就返回，重点2.找不到返回-1
+7. lastIndexOf 从后向前找
+a. includes ES2016 判断当前数组是否包含某指定的值
+b. toSource  不是标准方法
+
+
 map
-concat ES3
-copyWithin ES6
+
+
 entries ES6   -----> return Array 迭代器对象，这里引了一个ES6的新概念 Array Iterator  next() 是iterator的方法，{ value: [ 0, 'a' ], done: false }  done 表示迭达器是否结束。
 every ES5
-fill ES6
+
 
 
 ES6 = ES2015
