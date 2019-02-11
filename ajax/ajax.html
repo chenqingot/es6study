@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ajax = new XMLHttpRequest();
+        ajax.open('get', "https://jsonplaceholder.typicode.com/posts");
+        ajax.send();
+        ajax.onreadystatechange = () => {
+            if (ajax.readyState == 4 && ajax.status == 200) {
+                console.log(ajax.responseText);
+            }
+        }
+    </script>
+</body>
+
+</html>
