@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JSONP 实例</title>
+</head>
+
+<body>
+    <div id="divCustomers"></div>
+    
+    <script type="text/javascript">
+        function callbackFunction(result) {
+            var html = '<ul>';
+            for (var i = 0; i < result.length; i++) {
+                html += '<li>' + result[i] + '</li>';
+            }
+            html += '</ul>';
+            document.getElementById('divCustomers').innerHTML = html;
+        }
+        
+    </script>
+    <script type="text/javascript" src="http://localhost:63342/studyphp/jsonp.php?_ijt=sd1v6kh09m7mcdu144oqkf8j7f&jsoncallback=callbackFunction"></script>
+</body>
+<!-- jsonp是将ajax请转化成了一个url请求，url请求（js文件，或是说具有src属性的）是没有跨域限制的-->
+</html>
